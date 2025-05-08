@@ -2,6 +2,8 @@
 
 What are some differences between interfaces and types in TypeScript?
 
+
+
 declaration type in typescripts
 
 type User={
@@ -66,3 +68,24 @@ age:number;
 
 
 What is the use of the keyof keyword in TypeScript? Provide an example.
+
+
+The keyof operator takes an object type and produces a string or numeric literal union of its keys
+
+
+
+type User ={
+    name:string,
+    age:number;
+  }
+
+  type User2= keyof User;
+
+  const str :User2='name'
+
+
+
+
+
+
+
